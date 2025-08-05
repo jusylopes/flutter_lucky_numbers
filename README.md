@@ -1,16 +1,28 @@
-# flutter_lucky_numbers
+# 🍀 Lucky Numbers App
+### Sobre o projeto
 
-A new Flutter project.
+Um aplicativo Flutter simples que gera 6 números da sorte, usando Provider para gerenciar estado 🚀🚀🚀🚀🚀🚀. 
 
-## Getting Started
+### Screenshots
+<p>
+<img src="https://github.com/user-attachments/assets/46b418d6-d4f1-428a-bb60-a67d81596369" width="28%">
+</p>
 
-This project is a starting point for a Flutter application.
+https://github.com/user-attachments/assets/0a97adb7-cb74-49cc-9189-29e05c6d6c2d
 
-A few resources to get you started if this is your first Flutter project:
+### 🔧 Instalação
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone este repositório:
+     
+   ```bash
+   git clone https://github.com/jusylopes/flutter_lucky_numbers.git
+   cd lucky_numbers_app
+   ```
+3. Instale as dependências:
+   ```bash
+   flutter pub get
+   ```
+4. Execute no emulador ou dispositivo:
+   ```bash
+   flutter run
+   ```
