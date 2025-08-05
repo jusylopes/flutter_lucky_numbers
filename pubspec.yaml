@@ -7,21 +7,37 @@ environment:
   sdk: ^3.7.2
 
 dependencies:
+  animated_flip_counter: ^0.3.4
+  audioplayers: ^6.5.0
   cupertino_icons: ^1.0.8
   flutter:
-    sdk: flutter
-  google_fonts: ^6.2.1
+    sdk: flutter 
+  icons_launcher: ^3.0.1
   provider: ^6.1.5
+
+icons_launcher:
+  image_path: 'assets/logo/logo.png'
+  platforms:
+    android:
+      enable: true
+      image_path: 'assets/logo/logo.png'        
+      adaptive_background_image: 'assets/logo/ic_background.png'
+      adaptive_foreground_image: 'assets/logo/ic_foreground.png'
+      adaptive_round_image: 'assets/logo/ic_logo_round.png' 
 
 dev_dependencies:
   flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
 
+
 flutter:
   uses-material-design: true
-  generate: true
-
   assets:
     - assets/
     - assets/images/
+    - assets/audios/
+  fonts:
+    - family: pixel
+      fonts:
+        - asset: assets/fonts/pixel.ttf
