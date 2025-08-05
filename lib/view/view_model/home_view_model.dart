@@ -8,15 +8,10 @@ class HomeViewModel extends ChangeNotifier {
 
   static const int maxCount = 6;
   List<int> numbers = [];
-  String lastNumber = '???';
-  String alert = '';
+  int? lastNumber;
 
   void onButtonPressed() {
-    if (numbers.length < maxCount) {
-      _generateNext();
-    } else {
-      _resetar();
-    }
+    numbers.length < maxCount ? _generateNext() : _resetar();
     notifyListeners();
   }
 
@@ -25,13 +20,11 @@ class HomeViewModel extends ChangeNotifier {
   void _generateNext() {
     final n = service.nextUnique(numbers);
     numbers.add(n);
-    lastNumber = n.toString();
-    alert = '';
+    lastNumber = n;
   }
 
   void _resetar() {
     numbers.clear();
-    lastNumber = '???';
-    alert = '';
+    lastNumber = null;
   }
 }
